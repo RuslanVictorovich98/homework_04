@@ -31,6 +31,7 @@ header span {
   margin-right: 20px;
   font-weight: bold;
 }
+
 header span.logo a{
   font-size: 22px;
   font-family: normal;
@@ -67,33 +68,34 @@ div.shop-line {
 
 
 /*  */
-#wrapper {
+div.main-wrapper {
   margin-left: 200px;
-  margin-right: 150px;
-  margin-top: 50px;
-  float: left;
-  margin-bottom: 70px;
-  /* white-space: nowrap; */
+  margin-right: 200px;
+  /*border: 1px solid yellow; */
 }
+
+  #wrapper {
+  
+    /*border: 1px solid green;*/
+    /*margin: */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
 
 #wrapper #articles {
-  float: left;
-  width: 20%;
-  margin-right: 5%;
-  float: left;
-  box-sizing: border-box;
-  padding-bottom: 30px;
-  /* display: inline-block; */
-
-  /* float: left; */
+  /*padding-bottom: 30px;*/
+  flex-basis: 21%;
+  padding-bottom: 20px;
+  /*border: 1px solid red;*/
 
 }
 
-#wrapper #articles article{
-    /* white-space: nowrap; */
-    float: left;
-    box-sizing: border-box;
-}
 
 #wrapper #articles article img{
   /* display: block; */
@@ -101,24 +103,30 @@ div.shop-line {
 }
 
 div.text {
-  margin: 0px;
   color: white;
-  padding: 10px 0px 10px 1%;
   background-color: #323232;
+  display: flex;
+  justify-content: space-between;
+  /*padding: 10px 0px 10px 1%;*/
+
+
 }
-#blue-shirt {
-  margin-left: 10px;
+div#blue-shirt {
+  /*flex-basis: 75%*/
+
+  padding: 10px;
+
+  /*text-align: center;*/
+  /*margin-left: 10px;*/
 }
 
 
-#price {
-  float: right;
-  width: 25%;
-  margin-top: -10px;
-  padding-top:  10px;
-  padding-bottom: 10px;
-  background-color: #8C8C8C;
+div#price {
   text-align: center;
+  padding-top: 10px;
+  justify-content: space-between;
+  background-color: #8C8C8C;
+  flex-basis: 25%
 }
 
 #wrapper #articles:hover div.text {
@@ -131,7 +139,6 @@ div.text {
 /* news */
 div.news {
   /* border: 1px solid black; */
-  padding-top: 50px;
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -189,16 +196,25 @@ div.shop-line {
 
 #wrapper-2 {
   position: absolute;
-  display: inline-block;
-  float: left;
-  margin-top: 230px;
+  /*display: inline-block;*/
+  display: flex;
+  justify-content: space-around;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  border: 1px solid red;
+  margin-top: 17%;
+
+  
   margin-left: 200px;
   margin-right: 200px;
 }
 #articles-2 {
-  float: left;
-  padding-right: 3.1%;
-  width: 30%;
+  /*float: left;*/
+  /*padding-right: 3.1%;*/
+  flex-basis: 30%;
+  /*flex-wrap: wrap;*/
 }
 
 div.red-more-green {
